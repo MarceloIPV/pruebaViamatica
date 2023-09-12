@@ -16,6 +16,9 @@ import viamaticaPrueba.PruebaMarcelo.modelo.repositorio.UsuariosRepositorio;
  *
  * @author marce
  */
+
+//Funcionalidad Crud tabla sessions
+
 @Service
 public class SessionsServicios implements ISessionsServicios{
 

@@ -23,7 +23,7 @@ import viamaticaPrueba.PruebaMarcelo.servicios.PersonaServicio;
  *
  * @author marce
  */
-
+//Implementacion del Api-Rest metodos Crud tabla Persona
 @RestController
 @RequestMapping("/personas")
 public class PersonaControlador {

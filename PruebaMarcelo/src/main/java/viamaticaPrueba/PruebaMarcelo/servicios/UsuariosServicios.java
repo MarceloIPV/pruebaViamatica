@@ -9,22 +9,21 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import viamaticaPrueba.PruebaMarcelo.controladores.ControladorUsuario;
 import viamaticaPrueba.PruebaMarcelo.modelo.Usuarios;
 import viamaticaPrueba.PruebaMarcelo.modelo.Persona;
 import viamaticaPrueba.PruebaMarcelo.modelo.repositorio.UsuariosRepositorio;
-import javax.persistence.EntityManager;
-import org.springframework.format.annotation.DateTimeFormat;
 import viamaticaPrueba.PruebaMarcelo.modelo.repositorio.PersonaRepositorio;
 
 /**
  *
  * @author marce
  */
+
+//Funcionalidad Crud tabla usuarios
+
 @Service
 public class UsuariosServicios implements IUsuariosServicios{
 

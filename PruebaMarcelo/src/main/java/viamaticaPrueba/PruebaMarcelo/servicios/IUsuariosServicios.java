@@ -13,6 +13,8 @@ import viamaticaPrueba.PruebaMarcelo.modelo.Usuarios;
  *
  * @author marce
  */
+
+//Declaración de la metodos basicos crud tabla usuarios
 public interface IUsuariosServicios {
     
     public List<Usuarios> listarUsuarios();
@@ -23,5 +25,6 @@ public interface IUsuariosServicios {
     
     public void eliminarUsuario(Integer idUsuario);
     
+    //Declaración de metodo agregarUsuario tabla rol_usuarios y Persona
     public String agregarUsuario(String nombres, String apellidos, String identificacion, String fechaNacimiento, String nombre_usuario, String password);
 }

@@ -12,6 +12,9 @@ import viamaticaPrueba.PruebaMarcelo.modelo.Rol;
  *
  * @author marce
  */
+
+//Declaración de la metodos basicos crud tabla Rol
+
 public interface IRolServicios {
      public List<Rol> listarRol();
     

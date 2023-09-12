@@ -16,6 +16,7 @@ import viamaticaPrueba.PruebaMarcelo.modelo.repositorio.PersonaRepositorio;
  * @author marce
  */
 
+//Funcionalidad Crud tabla Persona
 @Service
 public class PersonaServicio implements IPersonaServicio{
     

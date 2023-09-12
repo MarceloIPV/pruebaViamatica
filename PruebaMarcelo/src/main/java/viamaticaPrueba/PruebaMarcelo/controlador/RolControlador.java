@@ -23,6 +23,8 @@ import viamaticaPrueba.PruebaMarcelo.servicios.RolServicios;
  * @author marce
  */
 
+//Implementacion del Api-Rest metodos Crud tabla ROL
+
 @RestController
 @RequestMapping("/rol")
 public class RolControlador {

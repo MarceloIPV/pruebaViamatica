@@ -12,6 +12,7 @@ import viamaticaPrueba.PruebaMarcelo.modelo.Persona;
  *
  * @author marce
  */
+//Declaración de la metodos basicos crud tabla Persona
 
 public interface IPersonaServicio {
     
