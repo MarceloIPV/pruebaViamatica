@@ -19,5 +19,5 @@ public interface IRolServicios {
      
     public Rol guardarRol(Rol rol);
     
-    public void eliminarRol(Rol rol);
+    public void eliminarRol(Integer idRol);
 }

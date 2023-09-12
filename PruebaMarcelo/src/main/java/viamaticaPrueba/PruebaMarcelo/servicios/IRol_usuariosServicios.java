@@ -19,5 +19,5 @@ public interface IRol_usuariosServicios {
      
     public Rol_usuarios guardarRol_usuarioOpciones(Rol_usuarios rol_usuario);
     
-    public void eliminarRol_usuario(Rol_usuarios rol_usuario);
+    public void eliminarRol_usuario(Integer idRol_usuario);
 }

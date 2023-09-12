@@ -19,5 +19,5 @@ public interface ISessionsServicios {
      
     public Sessions guardarSesiones(Sessions sesiones);
     
-    public void eliminarSesiones(Sessions sesiones);
+    public void eliminarSesiones(Integer idSession);
 }

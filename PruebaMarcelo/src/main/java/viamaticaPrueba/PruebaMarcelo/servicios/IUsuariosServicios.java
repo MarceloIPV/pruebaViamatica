@@ -20,5 +20,5 @@ public interface IUsuariosServicios {
      
     public Usuarios guardarUsuario(Usuarios usuario);
     
-    public void eliminarUsuario(Usuarios usuario);
+    public void eliminarUsuario(Integer idUsuario);
 }

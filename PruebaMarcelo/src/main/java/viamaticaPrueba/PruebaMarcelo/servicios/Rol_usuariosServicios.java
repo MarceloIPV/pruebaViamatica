@@ -37,8 +37,8 @@ public class Rol_usuariosServicios implements  IRol_usuariosServicios{
     }
 
     @Override
-    public void eliminarRol_usuario(Rol_usuarios rol_usuario) {
-        rol_usuariosRepositorio.delete(rol_usuario);
+    public void eliminarRol_usuario(Integer idRol_usuario) {
+        rol_usuariosRepositorio.deleteById(idRol_usuario);
 
     }
 

@@ -19,5 +19,5 @@ public interface IRolOpcionesServicios  {
      
     public RolOpciones guardarRolOpciones(RolOpciones rolOpciones);
     
-    public void eliminarRolOpciones(RolOpciones rolOpciones);
+    public void eliminarRolOpciones(Integer idRolOpciones);
 }

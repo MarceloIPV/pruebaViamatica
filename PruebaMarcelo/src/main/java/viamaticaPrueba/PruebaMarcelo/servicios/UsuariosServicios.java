@@ -35,8 +35,8 @@ public class UsuariosServicios implements IUsuariosServicios{
     }
 
     @Override
-    public void eliminarUsuario(Usuarios usuario) {
-         usuarioRepositorio.delete(usuario);
+    public void eliminarUsuario(Integer idUsuario) {
+         usuarioRepositorio.deleteById(idUsuario);
     }
     
 }

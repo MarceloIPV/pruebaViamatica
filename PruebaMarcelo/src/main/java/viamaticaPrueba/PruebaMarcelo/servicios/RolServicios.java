@@ -36,8 +36,8 @@ public class RolServicios implements IRolServicios{
     }
 
     @Override
-    public void eliminarRol(Rol rol) {
-         rolRepositorio.delete(rol);
+    public void eliminarRol(Integer idRol) {
+         rolRepositorio.deleteById(idRol);
     }
     
 }

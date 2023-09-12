@@ -1,19 +1,13 @@
 package viamaticaPrueba.PruebaMarcelo.controlador;
 
 
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import viamaticaPrueba.PruebaMarcelo.modelo.Persona;
 import viamaticaPrueba.PruebaMarcelo.servicios.PersonaServicio;
@@ -52,14 +46,10 @@ public class PersonaControlador {
             return personaServicio.guardarPersona(persona);
         }
         
-        @DeleteMapping("/eliminarPersona/{id}")
-        public ResponseEntity<Map<String, Boolean>>
-            eliminarPersona(@PathVariable Integer idPersona){
+        @DeleteMapping("/eliminarPersona/{idPersona}")
+        public void eliminarPersona(@PathVariable Integer idPersona){
              personaServicio.eliminarPersona(idPersona);
-             // Json {}
-             Map<String, Boolean> respuesta = new HashMap<>();
-             respuesta.put("Eliminado", Boolean.TRUE);
-             return ResponseEntity.ok(respuesta);
+            
         }
         
         

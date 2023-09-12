@@ -37,8 +37,8 @@ public class RolOpcionesServicios implements IRolOpcionesServicios{
     }
 
     @Override
-    public void eliminarRolOpciones(RolOpciones rolOpciones) {
-                 rolOpcionesRepositorio.delete(rolOpciones);
+    public void eliminarRolOpciones(Integer idRolOpciones) {
+                 rolOpcionesRepositorio.deleteById(idRolOpciones);
 
     }
     

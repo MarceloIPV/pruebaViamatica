@@ -36,8 +36,8 @@ public class SessionsServicios implements ISessionsServicios{
     }
 
     @Override
-    public void eliminarSesiones(Sessions sesiones) {
-        sessionsRepositorio.delete(sesiones);
+    public void eliminarSesiones(Integer idSession) {
+        sessionsRepositorio.deleteById(idSession);
     }
     
 }
