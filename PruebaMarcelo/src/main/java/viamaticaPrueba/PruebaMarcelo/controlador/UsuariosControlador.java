@@ -1,7 +1,6 @@
 package viamaticaPrueba.PruebaMarcelo.controlador;
 
 
-import java.util.Date;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
@@ -26,6 +25,8 @@ import viamaticaPrueba.PruebaMarcelo.servicios.UsuariosServicios;
  *
  * @author marce
  */
+
+//Implementacion del Api-Rest metodos Crud tabla usuarios
 
 @RestController
 @RequestMapping("/usuarios")

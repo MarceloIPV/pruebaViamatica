@@ -12,6 +12,9 @@ import viamaticaPrueba.PruebaMarcelo.modelo.Rol_rolOpciones;
  *
  * @author marce
  */
+
+//Declaración de la metodos basicos crud tabla rol_rolOpciones
+
 public interface IRol_rolOpcionesServicios  {
     
     public List<Rol_rolOpciones> listarRol_rolOpciones();

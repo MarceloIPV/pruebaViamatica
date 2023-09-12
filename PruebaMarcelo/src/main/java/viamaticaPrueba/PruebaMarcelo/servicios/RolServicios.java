@@ -15,6 +15,8 @@ import viamaticaPrueba.PruebaMarcelo.modelo.repositorio.rolRepositorio;
  *
  * @author marce
  */
+
+//Funcionalidad Crud tabla Rol
 @Service
 public class RolServicios implements IRolServicios{
     

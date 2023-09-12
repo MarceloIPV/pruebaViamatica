@@ -12,6 +12,8 @@ import viamaticaPrueba.PruebaMarcelo.modelo.Sessions;
  *
  * @author marce
  */
+
+//Declaración de la metodos basicos crud tabla sessions
 public interface ISessionsServicios {
     public List<Sessions> listarSesiones();
     

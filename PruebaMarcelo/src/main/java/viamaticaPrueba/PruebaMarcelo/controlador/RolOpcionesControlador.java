@@ -14,7 +14,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import viamaticaPrueba.PruebaMarcelo.modelo.Rol;
 import viamaticaPrueba.PruebaMarcelo.modelo.RolOpciones;
 import viamaticaPrueba.PruebaMarcelo.servicios.RolOpcionesServicios;
 
@@ -22,6 +21,9 @@ import viamaticaPrueba.PruebaMarcelo.servicios.RolOpcionesServicios;
  *
  * @author marce
  */
+
+//Implementacion del Api-Rest metodos Crud tabla rolOpciones
+
 @RestController
 @RequestMapping("/rolOpciones")
 public class RolOpcionesControlador {

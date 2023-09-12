@@ -16,6 +16,8 @@ import viamaticaPrueba.PruebaMarcelo.modelo.repositorio.Rol_rolOpcionesRepositor
  *
  * @author marce
  */
+
+//Funcionalidad Crud tabla rol_rolOpciones
 @Service
 public class Rol_rolOpcionesServicios implements IRol_rolOpcionesServicios{
     

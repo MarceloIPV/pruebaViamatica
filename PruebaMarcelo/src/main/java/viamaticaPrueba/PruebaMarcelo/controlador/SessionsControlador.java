@@ -22,6 +22,9 @@ import viamaticaPrueba.PruebaMarcelo.servicios.SessionsServicios;
  * @author marce
  */
 
+//Implementacion del Api-Rest metodos Crud tabla sessions
+
+
 @RestController
 @RequestMapping("/sessions")
 public class SessionsControlador {
