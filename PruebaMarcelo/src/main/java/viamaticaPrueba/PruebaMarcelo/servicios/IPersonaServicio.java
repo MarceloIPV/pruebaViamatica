@@ -12,6 +12,7 @@ import viamaticaPrueba.PruebaMarcelo.modelo.Persona;
  *
  * @author marce
  */
+
 public interface IPersonaServicio {
     
     public List<Persona> listarPersonas();

@@ -12,6 +12,8 @@ import viamaticaPrueba.PruebaMarcelo.modelo.Persona;
  *
  * @author marce
  */
+
+//Declaración de la interface PersonaRepositorio de la tabla Personas capa Repositorio
 public interface PersonaRepositorio extends JpaRepository<Persona, Integer> {
     
 }

@@ -5,6 +5,7 @@
  */
 package viamaticaPrueba.PruebaMarcelo.servicios;
 
+import java.util.Date;
 import java.util.List;
 import viamaticaPrueba.PruebaMarcelo.modelo.Usuarios;
 
@@ -21,4 +22,6 @@ public interface IUsuariosServicios {
     public Usuarios guardarUsuario(Usuarios usuario);
     
     public void eliminarUsuario(Integer idUsuario);
+    
+    public String agregarUsuario(String nombres, String apellidos, String identificacion, String fechaNacimiento, String nombre_usuario, String password);
 }

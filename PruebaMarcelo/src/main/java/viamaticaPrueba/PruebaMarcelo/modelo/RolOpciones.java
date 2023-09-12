@@ -6,6 +6,7 @@
 package viamaticaPrueba.PruebaMarcelo.modelo;
 
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -21,11 +22,15 @@ import javax.persistence.Table;
 @Entity
 @Table(name="rolopciones")
 public class RolOpciones {
+    //Definicion de Variables de la Tabla RolOpciones 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY) @Column(name = "idOpcion")
     private Integer idOpcion;
+    
+    @Column(name = "nombreOpcion")
     private String nombreOpcion;
 
+    // Encapsulamiento de la tabla Rol
     /**
      * @return the idOpcion
      */

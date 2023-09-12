@@ -12,6 +12,8 @@ import viamaticaPrueba.PruebaMarcelo.modelo.Rol_rolOpciones;
  *
  * @author marce
  */
+
+//Declaración de la interface Rol_rolOpcionesRepositorio de la tabla rol_rolOpciones capa Repositorio
 public interface Rol_rolOpcionesRepositorio extends JpaRepository<Rol_rolOpciones, Integer>  {
     
 }

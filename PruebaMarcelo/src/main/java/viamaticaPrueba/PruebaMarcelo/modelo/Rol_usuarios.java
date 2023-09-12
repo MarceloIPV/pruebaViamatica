@@ -6,14 +6,13 @@
 package viamaticaPrueba.PruebaMarcelo.modelo;
 
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import lombok.ToString;
+
 
 /**
  *
@@ -24,13 +23,19 @@ import lombok.ToString;
 @Table(name="rol_usuarios")
 public class Rol_usuarios {
     
+    //Definicion de Variables de la Tabla rol_usuarios 
    @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+   @Column(name = "id_rolUsuario")
     private Integer id_rolUsuario;
             
+   @Column(name = "rol_IdRol")
     private Integer rol_IdRol;
+   
+   @Column(name = "usuarios_IdUsuarios")
     private Integer usuarios_IdUsuarios;
 
+   // Encapsulamiento de las variables
     /**
      * @return the id_rolUsuario
      */

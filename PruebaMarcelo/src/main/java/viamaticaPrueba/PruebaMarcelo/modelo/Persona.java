@@ -5,13 +5,14 @@
  */
 package viamaticaPrueba.PruebaMarcelo.modelo;
 
-import lombok.Setter;
-import lombok.Getter;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import java.util.Date;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 
 /**
  *
@@ -24,7 +25,9 @@ import java.util.Date;
 
 public class Persona {
     
-    @Id @Column(name = "idPersona")
+    //Definicion de Variables de la Tabla Personas 
+    
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY) @Column(name = "idPersona")
     private Integer id;
 
     @Column(name = "nombres")
@@ -41,9 +44,11 @@ public class Persona {
     
     public Persona() {}
 
+        //Contructor Entidad Persona
 	public Persona(String nombres, String apellidos, String identificacion, String fechaNacimiento) {
 	}
 
+        // Encapsulamiento de las variables
 	public Integer getId() {
 		return id;
 	}

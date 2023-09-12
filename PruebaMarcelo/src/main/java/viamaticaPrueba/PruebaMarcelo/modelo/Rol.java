@@ -5,31 +5,60 @@
  */
 package viamaticaPrueba.PruebaMarcelo.modelo;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
 
 /**
  *
  * @author marce
  */
 
-import lombok.Setter;
-import lombok.Getter;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+
 
 @Entity
 @Table(name = "rol")
 public class Rol {
     
- 
-    
-     @Id
-	@Getter @Setter @Column(name = "idRol")
+    //Definicion de Variables de la Tabla Personas 
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY) @Column(name = "idRol")
     private Integer idRol;
 
-    @Getter @Setter @Column(name = "rolName")
+    @Column(name = "rolName")
     private String rolName;
+
+    // Encapsulamiento de la tabla Rol
+    /**
+     * @return the idRol
+     */
+    public Integer getIdRol() {
+        return idRol;
+    }
+
+    /**
+     * @param idRol the idRol to set
+     */
+    public void setIdRol(Integer idRol) {
+        this.idRol = idRol;
+    }
+
+    /**
+     * @return the rolName
+     */
+    public String getRolName() {
+        return rolName;
+    }
+
+    /**
+     * @param rolName the rolName to set
+     */
+    public void setRolName(String rolName) {
+        this.rolName = rolName;
+    }
     
     
     

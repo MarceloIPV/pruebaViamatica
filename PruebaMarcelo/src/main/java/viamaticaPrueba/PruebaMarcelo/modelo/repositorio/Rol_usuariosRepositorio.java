@@ -12,6 +12,9 @@ import viamaticaPrueba.PruebaMarcelo.modelo.Rol_usuarios;
  *
  * @author marce
  */
+
+//Declaración de la interface Rol_usuariosRepositorio de la tabla rol_usuarios capa Repositorio
+
 public interface Rol_usuariosRepositorio extends JpaRepository<Rol_usuarios, Integer>{
     
 }

@@ -6,14 +6,13 @@
 package viamaticaPrueba.PruebaMarcelo.modelo;
 
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import lombok.ToString;
+
 
 /**
  *
@@ -24,17 +23,30 @@ import lombok.ToString;
 @Table(name="usuarios")
 
 public class Usuarios {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    //Definicion de Variables de la Tabla usuarios
+    
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY) @Column(name = "idUsuario")
     private Integer idUsuario ;
     
+    @Column(name = "userName")
     private String userName;
+    
+    @Column(name = "password")
     private String password;
+    
+    @Column(name = "mail")
     private String mail;
+    
+    @Column(name = "sessionActive")
     private char sessionActive;
+    
+    @Column(name = "persona_IdPersona2")
     private Integer persona_IdPersona2;
+    
+    @Column(name = "status")
     private String status;
 
+    // Encapsulamiento de las variables
     /**
      * @return the idUsuario
      */

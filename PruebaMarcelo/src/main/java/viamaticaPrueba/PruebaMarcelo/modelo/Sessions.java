@@ -11,10 +11,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 import java.util.Date;
+import javax.persistence.Column;
 
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import lombok.ToString;
 
 /**
  *
@@ -25,15 +23,22 @@ import lombok.ToString;
 
 @Table(name="sessions")
 public class Sessions {
+    //Definicion de Variables de la Tabla sessions 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "idSession")
     private Integer idSession;
     
+    @Column(name = "fechaIngreso")
     private Date fechaIngreso;
+    
+    @Column(name = "fechaCierre")
     private Date fechaCierre;
     
+    @Column(name = "usuario_IdUsuario")
     private Integer usuario_IdUsuario;
 
+    // Encapsulamiento de las variables
     /**
      * @return the idSession
      */

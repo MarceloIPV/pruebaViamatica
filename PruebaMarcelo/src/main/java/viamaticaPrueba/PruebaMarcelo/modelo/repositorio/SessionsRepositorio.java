@@ -12,6 +12,9 @@ import viamaticaPrueba.PruebaMarcelo.modelo.Sessions;
  *
  * @author marce
  */
+
+//Declaración de la interface SessionsRepositorio de la tabla sessions capa Repositorio
+
 public interface SessionsRepositorio extends JpaRepository<Sessions, Integer> {
     
 }

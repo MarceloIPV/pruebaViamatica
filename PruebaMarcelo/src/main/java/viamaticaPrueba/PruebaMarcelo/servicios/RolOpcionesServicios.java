@@ -7,6 +7,7 @@ package viamaticaPrueba.PruebaMarcelo.servicios;
 
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import viamaticaPrueba.PruebaMarcelo.modelo.RolOpciones;
 import viamaticaPrueba.PruebaMarcelo.modelo.repositorio.rolOpcionesRepositorio;
 
@@ -14,6 +15,7 @@ import viamaticaPrueba.PruebaMarcelo.modelo.repositorio.rolOpcionesRepositorio;
  *
  * @author marce
  */
+@Service
 public class RolOpcionesServicios implements IRolOpcionesServicios{
     
     @Autowired

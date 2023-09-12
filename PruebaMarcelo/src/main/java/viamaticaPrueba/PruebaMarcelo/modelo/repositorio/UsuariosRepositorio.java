@@ -12,6 +12,9 @@ import viamaticaPrueba.PruebaMarcelo.modelo.Usuarios;
  *
  * @author marce
  */
+
+//Declaración de la interface UsuariosRepositorio de la tabla usuarios capa Repositorio
+
 public interface UsuariosRepositorio extends JpaRepository<Usuarios, Integer>{
     
 }
